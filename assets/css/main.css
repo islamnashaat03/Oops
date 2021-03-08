@@ -1,0 +1,39 @@
+                                /* START GLOBAL  */
+body{height: 2000PX; font-family: font-family: 'Cairo', sans-serif;;}
+
+:root{
+    --mainColor:#f7875c;
+    --mainColor2:#c64259;
+}
+
+header {background: rgb(245,132,90);
+background: linear-gradient(90deg, rgba(245,132,90,1) 50%, rgba(202,70,88,1) 50%);
+background-size: cover;
+position: relative;
+text-align: center;
+}
+header img:nth-child(2) {
+    position: absolute;
+    top: 150px;
+    right: 605px;
+    text-align: center;
+    height: 60px;
+}
+header .add-ad{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    color: #fff;
+    margin-top: 10px;
+}
+header .add-ad i {font-size: 2px;padding: 5px;}
+header .add-ad button {
+    color: var(--mainColor2);
+    padding: 3px;
+    border-radius: 30px;
+    font-size: 14px;
+    width: 115px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
