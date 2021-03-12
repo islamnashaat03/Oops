@@ -1,39 +1,304 @@
                                 /* START GLOBAL  */
-body{height: 2000PX; font-family: font-family: 'Cairo', sans-serif;;}
-
+body {
+    height: 6000PX;
+    font-family: 'Cairo', sans-serif;
+}
+img{max-width: 100%;}
 :root{
-    --mainColor:#f7875c;
-    --mainColor2:#c64259;
+    --mainColor  :#f7875c;
+    --mainColor2 :#ca4759;
 }
 
-header {background: rgb(245,132,90);
-background: linear-gradient(90deg, rgba(245,132,90,1) 50%, rgba(202,70,88,1) 50%);
-background-size: cover;
-position: relative;
-text-align: center;
+                                /* END GLOBAL  */
+/* START HEADER  */
+header {
+    background-image: url(../imgs/bg@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;    
+    position: relative;
 }
-header img:nth-child(2) {
-    position: absolute;
-    top: 150px;
-    right: 605px;
-    text-align: center;
-    height: 60px;
+header .logo {
+    line-height:100vh;
+    margin: auto;
 }
-header .add-ad{
+header img {width: 350px;margin: auto;}
+header .options{
     position: absolute;
-    top: 0;
-    right: 30px;
+    top: 10px;
+    right: 20px;
     color: #fff;
     margin-top: 10px;
+    display: flex;
+    margin: 20px;
 }
-header .add-ad i {font-size: 2px;padding: 5px;}
-header .add-ad button {
+header .options .login {font-size: 27px;}
+header .options .login a {color:#fff ; }
+header .options .add-ad {margin: 10px;}
+header .options .add-ad a {
+    background-color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
     color: var(--mainColor2);
-    padding: 3px;
-    border-radius: 30px;
-    font-size: 14px;
-    width: 115px;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* END HEADER  */
+/* START .SEARC-FIELD */
+.search-field {
+    margin: -70px auto ;
+    width: 85%;
+    background-image: linear-gradient(to right top, #ca4759, #d75659, #e3665a, #ed765b, #f7875c);
+    position: relative; 
+    padding: 15px;
+    box-shadow: 7px 9px 31px -5px rgba(136,136,136,0.54);
+    -webkit-box-shadow: 7px 9px 31px -5px rgba(136,136,136,0.54);
+    -moz-box-shadow: 7px 9px 31px -5px rgba(136,136,136,0.54);
+}
+.search-field form{margin-top: 13px;}
+.search-field .form-group{
+    align-items: center;
+    background: #FFF;
     border: none;
     outline: none;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    padding: 10px;
+}
+.search-field .form-group svg:not(:root).svg-inline--fa{
+    position: absolute;
+    top:10px;
+    left: 30px;
+    color: var(--mainColor2);
+    font-size: 35px;
+}
+.form-control:focus{
+    box-shadow: none;
+    background: transparent;
+    border-color: inherit;
+}
+.search-field select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 10px;
+    text-overflow: '';
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+    background: transparent;
+    border: none;
+    border-radius: 100px;
+    color: #ccc;
+}
+option
+{
+    color: #000;
+}
+option:first-child
+{
+    color: #ccc;
+}
+
+.search-field button {
     background-color: #fff;
+    border: none;
+    outline: none;
+    color: #c7c7c7;
+    padding: 8px;
+}
+.search-field .form-control {
+    width: 100%;
+    font-weight: bold;
+    border: none;
+}
+.search-field .form-control::placeholder{
+    color: #c7c7c7;
+    opacity: 1;
+}
+/* END SEARCH FIELD  */
+/* START SEARCH ICONS  */
+.search-icons {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search-icons .cars {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-icons .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search-icons .svg-inline--fa {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    margin: 15px;
+    padding: 30px;
+}
+.search-icons .fa-paw ,
+.search-icons .fa-mobile{ background-image: url(../imgs/Rectangle\ 52.png);font-size: 20px;}
+.search-icons .fa-car ,
+.search-icons .fa-desktop {background-image: url(../imgs/Rectangle\ 51.png);}
+.search-icons .fa-tshirt{background-image: url(../imgs/Rectangle\ 53.png);}
+.search-icons .fa-building{background-image: url(../imgs/Rectangle\ 54.png);}
+.search-icons .btn-secondary {
+    color: #dedede;
+    background-color: #444444;
+    border-color: #6c757d;
+    border-radius: 30px;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+}     
+.search-icons .btn-secondary p {
+    width: 90%;
+    display: inline-block;
+    margin: 0;
+}
+/* END SEARCH ICONS  */
+/* START RECENTLY ADDED  */
+.recently-added {margin-top: 50px;}
+.recently-added h3 {
+    margin: 15px;
+    border-right: 6px solid var(--mainColor);
+    padding: 10px 15px 10px 0;
+    color: var(--mainColor2);
+    font-weight: bold;
+}
+.recently-added .svg-inline--fa {color: var(--mainColor2);}
+.recently-added .card {
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #f2f2f2;
+    margin: 20px 0;
+    box-shadow: 3px 3px 0px 0px rgba(231,231,231,0.52);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(231,231,231,0.52);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(231,231,231,0.52);
+}
+.recently-added .card-text {
+    font-size: 18px;
+    font-weight: 800;
+    color: #4f4f4f;
+}
+.recently-added a {
+    background-image: url(../imgs/Rectangle\ 51@2x.png);
+    background-size: contain;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 10px 100px;
+    font-size: 20px;
+    margin: 20px;
+}
+/* END RECENTLY ADDED  */
+/* START SUBSCRIBE  */
+.subscribe {
+    margin-top: 40px;
+    background-image: url(../imgs/Rectangle\ 9.png);
+    background-size: cover;
+}
+.subscribe h3 {
+    padding: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+.subscribe .mail {
+    background-color: #fff;
+    border-radius: 100px ;
+    padding:20px 60px 20px 350px;
+    outline: none;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    color: #aeaeae;
+    font-size: 22px;
+    font-weight: bold;
+}
+.subscribe .mail::placeholder{color: #aeaeae;text-align: right;}
+.subscribe button {
+    border: none;
+    outline: none;
+    margin: 20px auto 40px ;
+    padding: 15px 100px;
+    border-radius: 100px;
+    background-color: #fff;
+    color: var(--mainColor);
+    font-size: 22px;
+    font-weight: bold;
+}
+/* END SUBSCRIBE  */
+/* START FOOTER  */
+footer {
+    background-image: url(../imgs/Rectangle\ 12@2x.png);
+}
+footer .footer-1 {margin: 20px;}
+footer .footer-1 img {
+    height: 80px;
+    margin: 35px 0 15px;
+    text-align: center;
+}
+footer .footer-1 p {font-size: 12px;color: #f8f8f8;font-weight: bold;line-height: 2;}
+footer .footer-2 {
+    margin: 55px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+footer .footer-2 a {
+    margin: 15px 0;
+    text-decoration: none;
+    color: #f8f8f8;
+    transition: all 0.2s ease-in-out ;
+}
+footer .footer-2 a:hover{color: var(--mainColor);}
+footer .footer-3 {margin: 55px 20px 20px 20px;display: flex; justify-content: space-around;}
+footer .footer-3 .svg-inline--fa {
+    font-size: 35px ;
+    color: #f8f8f8;
+}
+footer .footer-4 {
+    margin: 55px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+footer .footer-4 h4 {color: #f8f8f8;font-weight: bold;}
+footer .footer-4 a {
+    background-color: #f8f8f8;
+    color: var(--mainColor2);
+    margin: 15px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 100px;
+    width: 80%;
+    font-size: 22px;
+}
+footer .footer-4 a .svg-inline--fa {
+    color: var(--mainColor);
+font-size: 35px;}
+
+
+
+
+
+                                        /* START MEDIA  */
+    /* MOBILE SCREEN  */
+@media (max-width : 768px) {
+    .subscribe .mail {padding:20px 60px 20px 50px;}
+    .subscribe h3 {padding: 25px;}
 }
