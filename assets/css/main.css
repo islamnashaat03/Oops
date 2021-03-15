@@ -14,11 +14,8 @@ img{max-width: 100%;}
     -webkit-box-shadow: 3px 3px 0px 0px rgba(231,231,231,0.52);
     -moz-box-shadow: 3px 3px 0px 0px rgba(231,231,231,0.52);
 }
-.card .card-text .svg-inline--fa {color: var(--mainColor2);}
 .card .card-text i {color: var(--mainColor2);}
-
 .card .card-text {font-size: 18px;font-weight: 800;color: #4f4f4f;}
-
     /* END GLOBAL  */
     /* START HEADER  */
 header {
@@ -31,7 +28,7 @@ header {
 }
 header .logo {line-height:100vh;margin: auto;}
 header img {width: 350px;margin: auto;}
-header .options{
+header .options {
     position: absolute;
     top: 10px;
     right: 20px;
@@ -41,8 +38,13 @@ header .options{
     margin: 20px;
 }
 header .options .login {font-size: 27px;}
+header .options .login i {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
 header .options .login a {color:#fff ; }
-header .options .add-ad {margin: 10px;}
+header .options .add-ad {margin: 13px 35px;}
 header .options .add-ad a {
     background-color: #fff;
     border-radius: 10px;
@@ -81,7 +83,7 @@ header .options .add-ad a {
     color: var(--mainColor2);
     font-size: 35px;
 }
-.search-field .form-group svg:not(:root).svg-inline--fa{
+.search-field .form-group i{
     position: absolute;
     top:10px;
     left: 30px;
@@ -130,7 +132,7 @@ option:first-child{color: #ccc;}
     align-items: center;
 }
 .search-icons .row{display: flex;justify-content: space-around;align-items: center;}
-.search-icons .svg-inline--fa {
+.search-icons i {
     background-size: cover;
     width: 100px;
     height: 100px;
@@ -144,7 +146,7 @@ option:first-child{color: #ccc;}
     padding: 30px;
 }
 .search-icons .fa-paw ,
-.search-icons .fa-mobile{ background-image: url(../imgs/Rectangle\ 52.png);font-size: 20px;}
+.search-icons .fa-mobile{ background-image: url(../imgs/Rectangle\ 52.png);}
 .search-icons .fa-car ,
 .search-icons .fa-desktop {background-image: url(../imgs/Rectangle\ 51.png);}
 .search-icons .fa-tshirt{background-image: url(../imgs/Rectangle\ 53.png);}
@@ -231,7 +233,7 @@ footer .footer-2 a {
 }
 footer .footer-2 a:hover{color: var(--mainColor);}
 footer .footer-3 {margin: 55px 0 20px;display: flex; justify-content: space-around;}
-footer .footer-3 .svg-inline--fa {font-size: 35px ;color: #f8f8f8;}
+footer .footer-3 i {font-size: 35px ;color: #f8f8f8;}
 footer .footer-3 i {font-size: 35px ;color: #f8f8f8;}
 footer .footer-4 {
     margin: 55px 0 20px;
@@ -249,7 +251,7 @@ footer .footer-4 a {
     border-radius: 100px;
     font-size: 18px;
 }
-footer .footer-4 a .svg-inline--fa {color: var(--mainColor);font-size: 18px;}
+footer .footer-4 a .i {color: var(--mainColor);font-size: 18px;}
 footer .footer-4 a i {color: var(--mainColor);font-size: 18px;}
     /* END FOOTER  */
     /* START ADD E3LAN PAGE  */
@@ -309,7 +311,7 @@ footer .footer-4 a i {color: var(--mainColor);font-size: 18px;}
     padding-right: 5px;
 }
 .add-e3lan select:focus{border: none; outline: none;}
-.add-e3lan .form-group svg:not(:root).svg-inline--fa{
+.add-e3lan .form-group i{
     position: absolute;
     left: 30px;
     top: 5px;
@@ -406,31 +408,31 @@ option:first-child{color:var(--mainColor);font-weight: bold;}
 }
     /* END CARS PAGE  */
     /* START LOGIN PAGE  */
-.login {
+.login-page {
     margin: 30px 60px;
 }
-.login .left-side {
+.login-page .left-side {
     background: rgb(202,71,89);
     background: linear-gradient(180deg, rgba(202,71,89,1) 31%, rgba(247,154,92,1) 75%);
 }
 /* .login .left-side img {width: 90px;} */
-.login .right-side {background-color: #fff;}
-.login .right-side .form-group {position: relative;}
-.login .right-side .form-group .form-control {
+.login-page .right-side {background-color: #fff;}
+.login-page .right-side .form-group {position: relative;}
+.login-page .right-side .form-group .form-control {
     background-color: var(--mainColor2);
     color: #fff;
     padding: 30px 60px 30px 30px ;
     border-radius: 30px;
     margin: 20px auto;
 }
-.login .right-side .form-group .form-control::placeholder{color: #fff; font-size: 22px;font-weight: bold;}
-.login .right-side i {
+.login-page .right-side .form-group .form-control::placeholder{color: #fff; font-size: 22px;font-weight: bold;}
+.login-page .right-side i {
     position: absolute;
     top:10px;
     right: 15px;
     color: #fff;
 }
-.login .right-side button {
+.login-page .right-side button {
     background-color: var(--mainColor2);
     border: none;
     outline: none;
@@ -439,11 +441,11 @@ option:first-child{color:var(--mainColor);font-weight: bold;}
     color: #fff;
     font-size: 20px;
 }
-.login .right-side a {
+.login-page .right-side a {
     color: var(--mainColor2);
     text-decoration: none;
 }
-.login .right-side .d-flex {justify-content: space-between; margin-bottom: 60px;}
+.login-page .right-side .d-flex {justify-content: space-between; margin-bottom: 60px;}
 
     /* END LOGIN PAGE  */
 
@@ -460,13 +462,13 @@ option:first-child{color:var(--mainColor);font-weight: bold;}
     .subscribe .mail {padding:20px 60px 20px 50px;}
     .subscribe h3 {padding: 25px;}
     .add-e3lan .form-group{padding: 8px;}
-    .add-e3lan .form-group svg:not(:root).svg-inline--fa{left: 20px;top: 0px;font-size: 40px;}
+    .add-e3lan .form-group i{left: 20px;top: 0px;font-size: 40px;}
     .add-e3lan .car-options .car-options-item{margin: 5px; padding: 5px;}
 
 }
 @media (min-width : 992px ) {
     .search-field .form-group-2{margin: 35px 0 70px;}
     .search-field .form-group-2 i {top: 35px;left: 30px;}
-    .login .right-side .form-group{margin: 50px;}
+    .login-page .right-side .form-group{margin: 50px;}
 
 }
