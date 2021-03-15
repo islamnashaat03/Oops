@@ -404,6 +404,48 @@ option:first-child{color:var(--mainColor);font-weight: bold;}
     margin-left: 15px;
     border-radius: 5px;
 }
+    /* END CARS PAGE  */
+    /* START LOGIN PAGE  */
+.login {
+    margin: 30px 60px;
+}
+.login .left-side {
+    background: rgb(202,71,89);
+    background: linear-gradient(180deg, rgba(202,71,89,1) 31%, rgba(247,154,92,1) 75%);
+}
+/* .login .left-side img {width: 90px;} */
+.login .right-side {background-color: #fff;}
+.login .right-side .form-group {position: relative;}
+.login .right-side .form-group .form-control {
+    background-color: var(--mainColor2);
+    color: #fff;
+    padding: 30px 60px 30px 30px ;
+    border-radius: 30px;
+    margin: 20px auto;
+}
+.login .right-side .form-group .form-control::placeholder{color: #fff; font-size: 22px;font-weight: bold;}
+.login .right-side i {
+    position: absolute;
+    top:10px;
+    right: 15px;
+    color: #fff;
+}
+.login .right-side button {
+    background-color: var(--mainColor2);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 7px 65px;
+    color: #fff;
+    font-size: 20px;
+}
+.login .right-side a {
+    color: var(--mainColor2);
+    text-decoration: none;
+}
+.login .right-side .d-flex {justify-content: space-between; margin-bottom: 60px;}
+
+    /* END LOGIN PAGE  */
 
 
 
@@ -425,5 +467,6 @@ option:first-child{color:var(--mainColor);font-weight: bold;}
 @media (min-width : 992px ) {
     .search-field .form-group-2{margin: 35px 0 70px;}
     .search-field .form-group-2 i {top: 35px;left: 30px;}
+    .login .right-side .form-group{margin: 50px;}
 
 }
