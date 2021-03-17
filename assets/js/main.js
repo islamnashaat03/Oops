@@ -5,3 +5,19 @@ $(document).ready(function(){
       increaseArea: '20%' // optional
     });
   });
+
+$(document).ready(function(){
+  $("#cars-input").hide();
+  })
+  
+$("#category").change(function(){
+  var categoryType = $("#category").val();
+  if (categoryType == 1)
+  { 
+    $("#cars-input").show();
+
+  } else
+  {
+    $("#cars-input").hide();
+  }
+});

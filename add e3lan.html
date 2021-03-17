@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha512-0S+nbAYis87iX26mmj/+fWt1MmaKCv80H+Mbo+Ne7ES4I6rxswpfnC6PxmLiw33Ywj2ghbtTw0FkLbMWqh4F7Q==" crossorigin="anonymous" />
     <link href="assets/plugins/icheck-1.0.3/skins/square/orange.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/main2.css">
     
 
     <title>اضف اعلان</title>
 </head>
-<body>
+<body class="add-e3lan-background">
     <!-- START HEADER  -->
     <header class="edit-header">
         <div class="options">
@@ -23,7 +22,7 @@
                 <a href="login.html"><i class="fas fa-user"></i></a> 
             </div>
             <div class="add-ad">
-                <a href="#">اضف اعلان </a>
+                <a href="add e3lan.html">اضف اعلان </a>
             </div>
         </div> 
         <div class="logo text-center">
@@ -35,7 +34,7 @@
     <section class="add-e3lan">
             <h3>اضف اعلان </h3>
         <div class="e3lan">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-6 ">
                         <form action="">
@@ -45,83 +44,84 @@
                             </div>
                             <h4  >صنف إعلانك  </h4>
                             <div class="form-group ">
-                                <select id="">
-                                    <option value="1" selected>عربيات </option>
+                                <select id="category">
+                                    <option value="0" selected disabled >   </option>
+                                    <option value="1" >عربيات </option>
                                     <option value="2" >مش عربيات  </option>
                                 </select>
                                 <i class="fas fa-caret-down"></i>
                             </div>
-                            <h4>السعر</h4>
-                            <div class="form-group">
-                                <input type="text" class="form-control">
-                            </div>
-                            <h4>طريقة الدفع </h4>
-                            <div class="form-group ">
-                                <select id="">
-                                    <option value="" selected disabled >طريقة الدفع</option>
-                                    <option value="1" >كاش   </option>
-                                    <option value="2" >مش كاش   </option>
-                                </select>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <h4>الموديل</h4>
-                            <div class="form-group ">
-                                <select id="">
-                                    <option value="" selected disabled >الموديل </option>
-                                    <option value="1" >تويوتا </option>
-                                    <option value="2" >مرسيدس</option>
-                                </select>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <h4>السنة  </h4>
-                            <div class="form-group ">
-                                <select id="">
-                                    <option value="" selected disabled >السنة </option>
-                                    <option value="1" >1980</option>
-                                    <option value="2" >2020</option>
-                                </select>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <h4>كيلومترات </h4>
-                            <div class="form-group">
-                                <input type="text" class="form-control">
-                            </div>
-                            <h4>ناقل الحركة </h4>
-                            <div class="form-group ">
-                                <select id="">
-                                    <option value="1" >اوتوماتيك </option>
-                                    <option value="2" >مانويال</option>
-                                </select>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <h4>الحالة </h4>
-                            <div class="form-group ">
-                                <select id="">
-                                    <option value="1" >مستعمل </option>
-                                    <option value="2" >جديد</option>
-                                </select>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <h5> اضافات : </h5>
-                            <div class="car-options">
-                                <div class="car-options-item">
-                                    <label > كاميرا خلقية </label> <input type="checkbox">
-                                    <label > زجاج كهرباء  </label> <input type="checkbox">
-                                    <label > فوانيس شبورة  </label> <input type="checkbox">
+                            <div id="cars-input">
+                                <h4>السعر</h4>
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
                                 </div>
-                                <div class="car-options-item">
-                                    <label > كاميرا خلقية </label> <input type="checkbox">
-                                    <label > زجاج كهرباء  </label> <input type="checkbox">
-                                    <label > فوانيس شبورة </label> <input type="checkbox">
+                                <h4>طريقة الدفع </h4>
+                                <div class="form-group ">
+                                    <select id="">
+                                        <option value="" selected disabled >طريقة الدفع</option>
+                                        <option value="1" >كاش   </option>
+                                        <option value="2" >مش كاش   </option>
+                                    </select>
+                                    <i class="fas fa-caret-down"></i>
                                 </div>
-                                <div class="car-options-item">
-                                    <label > كاميرا خلقية </label> <input type="checkbox">
-                                    <label > زجاج كهرباء  </label> <input type="checkbox">
-                                    <label > فوانيس شبورة </label> <input type="checkbox">
+                                <h4>الموديل</h4>
+                                <div class="form-group ">
+                                    <select id="">
+                                        <option value="" selected disabled >الموديل </option>
+                                        <option value="1" >تويوتا </option>
+                                        <option value="2" >مرسيدس</option>
+                                    </select>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <h4>السنة  </h4>
+                                <div class="form-group ">
+                                    <select id="">
+                                        <option value="" selected disabled >السنة </option>
+                                        <option value="1" >1980</option>
+                                        <option value="2" >2020</option>
+                                    </select>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <h4>كيلومترات </h4>
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <h4>ناقل الحركة </h4>
+                                <div class="form-group ">
+                                    <select id="">
+                                        <option value="1" >اوتوماتيك </option>
+                                        <option value="2" >مانويال</option>
+                                    </select>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <h4>الحالة </h4>
+                                <div class="form-group ">
+                                    <select id="">
+                                        <option value="1" >مستعمل </option>
+                                        <option value="2" >جديد</option>
+                                    </select>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <h5> اضافات : </h5>
+                                <div class="car-options">
+                                    <div class="car-options-item">
+                                        <label > كاميرا خلقية </label> <input type="checkbox">
+                                        <label > زجاج كهرباء  </label> <input type="checkbox">
+                                        <label > فوانيس شبورة  </label> <input type="checkbox">
+                                    </div>
+                                    <div class="car-options-item">
+                                        <label > كاميرا خلقية </label> <input type="checkbox">
+                                        <label > زجاج كهرباء  </label> <input type="checkbox">
+                                        <label > فوانيس شبورة </label> <input type="checkbox">
+                                    </div>
+                                    <div class="car-options-item">
+                                        <label > كاميرا خلقية </label> <input type="checkbox">
+                                        <label > زجاج كهرباء  </label> <input type="checkbox">
+                                        <label > فوانيس شبورة </label> <input type="checkbox">
+                                    </div>
                                 </div>
                             </div>
-                        
-                            
                             <h4>وصف الإعلان </h4>
                                 <textarea  cols="70" rows="10" ></textarea>
                             <h4>مكان الإعلان</h4>
@@ -143,7 +143,6 @@
                             <div class="text-center">
                                 <button type="submit">انشر الإعلان</button>
                             </div>
-                            
                         </form>
                     </div>
                     <div class="col-sm-6">
@@ -174,7 +173,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="footer-3 text-center>
+                    <div class="footer-3 text-center">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -192,14 +191,6 @@
     
     </footer>
     <!-- END  FOOTER  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js" integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK" crossorigin="anonymous"></script>
-
-
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js" integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK" crossorigin="anonymous"></script>
