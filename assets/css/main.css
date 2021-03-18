@@ -179,7 +179,6 @@ option:first-child{color: #ccc;}
     color: var(--mainColor2);
     font-weight: bold;
 }
-
 .recently-added a {
     color:#fff;
     text-decoration: none;
