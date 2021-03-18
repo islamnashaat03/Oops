@@ -1,5 +1,5 @@
     /* START GLOBAL  */
-body {font-family: 'Cairo', sans-serif;height: 3000px;}
+body {font-family: 'Cairo', sans-serif;}
 .add-e3lan-background{background: #f1f1f1;}
 img{max-width: 100%;}
 :root{
@@ -48,10 +48,23 @@ header .options {
     display: flex;
     margin: 20px;
 }
+header .options .login .dropdown-toggle {
+    background: inherit;
+    border: none;
+    outline: none;
+}
+header .options .login .dropdown-toggle::after{display: none;}
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle{
+    color: #fff;
+    background-color:inherit;
+    border-color: inherit;
+ }
 header .options .login {font-size: 27px;}
-header .options .login i {position: absolute;top: 10px;right: 0px;}
-header .options .login a {color:#fff ; }
-header .options .add-ad {margin: 13px 35px;}
+/* header .options .login i {position: absolute;top: 10px;right: 0px;} */
+header .options .login a {color: inherit ; }
+header .options .add-ad {margin: 13px 0;}
 header .options .add-ad a {
     background-color: #fff;
     border-radius: 10px;
@@ -179,7 +192,7 @@ option:first-child{color: #ccc;}
     color: var(--mainColor2);
     font-weight: bold;
 }
-.recently-added a {
+.recently-added .btn  {
     color:#fff;
     text-decoration: none;
     border-radius: 100px;
@@ -187,6 +200,7 @@ option:first-child{color: #ccc;}
     font-size: 20px;
     margin: 20px;
     background: linear-gradient(180deg,#ca4759 15%, #f7875c 90%);
+    border: none;
 }
     /* END RECENTLY ADDED  */
     /* START SUBSCRIBE  */
@@ -428,7 +442,7 @@ option:first-child{color:var(--mainColor);font-weight: bold;}
      font-size: 22px;
      font-weight: bold;
 }
-.login-page .right-side i {position: absolute;top:14px;right: 15px;color: #fff;font-size: 28px;}
+.login-page .right-side form i {position: absolute;top:14px;right: 15px;color: #fff;font-size: 28px;}
 .login-page .right-side button {
     background-color: var(--mainColor2);
     border: none;
@@ -443,9 +457,19 @@ option:first-child{color:var(--mainColor);font-weight: bold;}
 }
 .login-page .right-side a {color: var(--mainColor2);text-decoration: none;}
 .login-page .right-side .d-flex {justify-content: space-between; margin-bottom: 60px;}
+.login-page .right-side .notice-that {position: relative; margin: 50px 0 80px 0;text-align: right;}
+.login-page .right-side .notice-that i {color: var(--mainColor);}
+.login-page .right-side .notice-that p {
+    display: inline-block;
+     color: var(--mainColor2);
+     margin-right: 15px;
+     font-size: 15px ;
+    }
+
     /* END LOGIN PAGE  */
     /* START CARS-DETAILS PAGE  */
 .cars-details{margin: 30px auto 60px ;}
+.cars-details .cars-details-right-side .upper-right-side{position: relative;}
 .cars-details .cars-details-right-side .upper-right-side h4 {font-weight: bold;}
 .cars-details .cars-details-right-side .upper-right-side img {width: 90%;}
 .cars-details .cars-details-right-side .upper-right-side p:first-of-type {
