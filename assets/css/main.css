@@ -269,6 +269,7 @@ footer .footer-4 a {
     padding: 10px;
     border-radius: 100px;
     font-size: 18px;
+    width: 200px;
 }
 footer .footer-4 a i {color: var(--mainColor);font-size: 18px;}
     /* END FOOTER  */
